@@ -10,15 +10,28 @@ body {
     border: 5px solid black;
   }
 
-header {
-    padding: 20px;
-    margin-bottom: 20px;
-    color: white;
+ul#navlist li { display: inline; }
+
+ul#navlist li a{
+    float: left;
+    width: 5em;
+    color:black;
+    background-color: white;
+    padding: 0.2em 1em;
+    text-decoration: none;
+    border-right: 1px solid black;
+}
+
+ul#navlist li a:hover{
+    background-color: #369;
+    color: #fff;
+}
 }
 #full {
     width: 100%;
-    overflow: auto;
+    overflow: ;
     clear: both;
     color: #fff;
     background: #394549;
+    clear: both;
   }

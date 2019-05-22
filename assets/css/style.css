@@ -10,14 +10,11 @@ body {
   }
 
 header {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
     float: left;
     width: 480px;
     color: #fff;
     background-color:white;
-}
+
 
 ul#navlist li { display: inline; }
 
@@ -30,10 +27,9 @@ ul#navlist li a{
     text-decoration: none;
     border-right: 1px solid black;
 }
-
+}
 #full {
     width: 100%;
-    overflow: ;
     clear: both;
     color:black;
     clear: both;

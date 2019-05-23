@@ -1,36 +1,64 @@
-* {
-    box-sizing: border-box;
-    text-align: center;
-  }
-  
-body {
-    font-size: 24px;
-    line-height: 32px;
-    color: #333;
-  }
+body { background: #1abc9c; font-family: 'Lato', sans-serif; text-transform: uppercase; letter-spacing: 1px;}
 
 header {
-    float: left;
-    width: 480px;
+    text-align: justify;
+    height: 8em;
+    padding: 2em 5%;
+    background: #2c3e50;
     color: #fff;
-    background-color:white;
-
-
-ul#navlist li { display: inline; }
-
-ul#navlist li a{
-    float: right;
-    width: 5em;
-    color:black;
-    background-color: white;
-    padding: 1px 4px;
-    text-decoration: none;
-    border-right: 1px solid black;
 }
-}
-#full {
+
+header::after {
+    content: '';
+    display: inline-block;
     width: 100%;
-    clear: both;
-    color:black;
-    clear: both;
-  }
+}
+
+header > div,
+header > div::before,
+header nav,
+header > div h1 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+header > div {
+    height: 100%;
+}
+
+header > div::before {
+    content: '';
+    height: 100%;
+}
+
+header > div h1 {
+    font-size: 3em;
+    font-style: italic;
+}
+
+header nav a {
+    padding: 0 0.6em;
+    white-space: nowrap;
+}
+
+header nav a:last-child {
+    padding-right: 0;
+}
+
+@media screen and (max-width: 720px){
+    
+    header {
+        height: auto;
+    }
+    
+    header > div,
+    header > div h1,
+    header nav {
+        height: auto;
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+    
+}

@@ -4,10 +4,10 @@ html {
   }
 
 body { 
-   font-family: 'Arial', 'Times New Roman', Times, serif;
-   letter-spacing: 1px;
+   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify;
     height: 75px;
     padding: 0em 5%;
@@ -16,9 +16,10 @@ header {
     border: 1px solid#cccccc;
 }
 #name {
-  width: 260px;
+  width: 160px;
+  box-sizing: border-box;
   background-color: #4aaaa5;
-  color: #ffffff
+  color: #ffffff;
 }
 
 header::after {
@@ -42,13 +43,18 @@ header nav a {
 }
 
 .container {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   background: url(file:///Users/Joe/Downloads/white_tiles/white_tiles_@2X.png);
-  width:940px;
+  width:960px;
   height:500px;
-  padding: 20px;
-  border: 1px black;
+  border: 1px solid black;
+  line-height: 40px;
 }
 
-#bio-image {
+h2 {
+  color: #4aaaa5;
+}
+
+img {
   float: left;
 }

@@ -1,14 +1,24 @@
-body { 
-    background: #ffffff;
-   font-family: 'Arial', 'Times New Roman', Times, serif;
-   letter-spacing: 1px;}
+html {
+	margin: 0;
+	padding: 0;
+  }
 
+body { 
+   font-family: 'Arial', 'Times New Roman', Times, serif;
+   letter-spacing: 1px;
+}
 header {
     text-align: justify;
-    height: 4em;
-    padding: 2em 5%;
-    background: #2c3e50;
-    color: #fff;
+    height: 75px;
+    padding: 0em 5%;
+    background:white;
+    color:black;
+    border: 1px solid#cccccc;
+}
+#name {
+  width: 260px;
+  background-color: #4aaaa5;
+  color: #ffffff
 }
 
 header::after {
@@ -29,4 +39,16 @@ header > div h1 {
 header nav a {
     padding: 0 0.6em;
     white-space: nowrap;
+}
+
+.container {
+  background: url(file:///Users/Joe/Downloads/white_tiles/white_tiles_@2X.png);
+  width:940px;
+  height:500px;
+  padding: 20px;
+  border: 1px black;
+}
+
+#bio-image {
+  float: left;
 }

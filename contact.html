@@ -2,18 +2,61 @@
 <html lang="en-us">
 
 <head>
-    <link rel="stylesheet" href="/Users/Joe/bootcamp_class/class_two/class-two/Portfolio/bio.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <meta charset="UTF-8">
     <title>Index</title>
 </head>
 
 <body>
-    <section id="contact-info">
-        <h2>Contact Info</h2>
-        <ul>
-            <li><strong>Email:</strong> <a href="#">joe.hancock95@gmail.com</a></li>
-            <li><strong>Github:</strong> <a href="#">JoeHancock1995</a></li>
-            <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
-        </ul>
-    </section>
+        <header>
+            <div>
+                <section id="name">
+                     <h1>Joe Hancock</h1> 
+                </section>
+            </div>
+            <nav>
+                <ul>
+                    <a href="file:///Users/Joe/bootcamp_class/Week1/homework_1/Basic-Portfolio/Basic-Portfolio/index.html">About</a>
+                    <a href="file:///Users/Joe/bootcamp_class/Week1/homework_1/Basic-Portfolio/Basic-Portfolio/portfolio.html">Portfolio</a>
+                    <a href="file:///Users/Joe/bootcamp_class/Week1/homework_1/Basic-Portfolio/Basic-Portfolio/contact.html">Contact</a>
+                </ul>
+            </nav>
+        </header> 
+    <div class="container">
+        <h2>Contact Info</h2>    
+            <div class="container">
+                <form action="/action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="name" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email" placeholder="Example@gmail.com..">
+                    </div>
+                </div>
+              <div class="row">
+                <div class="col-25"></div>
+              </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="message" name="Message" style="height:200px"></textarea>
+                    </div>
+                </div>
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+                </form>
+            </div>
+    </div>
 </body>

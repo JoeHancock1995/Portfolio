@@ -1,22 +1,27 @@
-html {
-	margin: 0;
-	padding: 0;
-  }
-
 body { 
    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
-header {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: justify;
-    height: 75px;
-    padding: 0em 5%;
-    background:white;
-    color:black;
-    border: 1px solid#cccccc;
+.header {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: justify;
+  height: 75px;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  padding: 0em 5%;
+  background:white;
+  color:black;
+  border: 1px solid#cccccc;
 }
+
 #name {
+  display: inline;
   width: 160px;
+  height: 75px;
+  padding-top: 30px;
+  padding-bottom: 32.5px;
+  padding-left:  10px;
+  padding-right: 10px;
   box-sizing: border-box;
   background-color: #4aaaa5;
   color: #ffffff;
@@ -44,11 +49,13 @@ header nav a {
 
 .container {
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  background: url(file:///Users/Joe/Downloads/white_tiles/white_tiles_@2X.png);
-  width:960px;
-  height:500px;
-  border: 1px solid black;
-  line-height: 40px;
+  background: url("file:///Users/Joe/Downloads/white_brick_wall/white_brick_wall_@2X.png");
+  box-sizing: content-box;
+  width:820px;
+  height:350px;
+  padding: 30px;
+  border: 40px;
+  margin: 5%
 }
 
 h2 {
@@ -97,7 +104,6 @@ input[type=submit]:hover {
   clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;

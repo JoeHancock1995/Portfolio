@@ -11,7 +11,7 @@ body {
   padding: 0em 5%;
   background:white;
   color:black;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 30px, #dddddd;
 }
 
 #name {
@@ -22,7 +22,7 @@ body {
   padding-bottom: 32.5px;
   padding-left:  10px;
   padding-right: 10px;
-  box-sizing: border-box;
+
   background-color: #4aaaa5;
   color: #ffffff;
 }
@@ -66,7 +66,6 @@ h2 {
 
 img {
   float: left;
-}
 
 
 input[type=text], select, textarea {

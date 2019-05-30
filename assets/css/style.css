@@ -51,8 +51,14 @@ header > div h1 {
 header nav a {
    padding: 0 0.6em;
    white-space: nowrap;
+   text-decoration: #666666;
 }
-
+header nav a:not(.active) {
+  color: #666666;
+}
+.active {
+  color: #666666;
+}
 h2 {
   color: #4aaaa5;
  }
@@ -64,7 +70,7 @@ h2 {
   width: 900px;
   padding: 30px;
   border: 1px solid #dddddd;
-  margin-top: 130px;
+  margin-top: 110px;
   margin-left: 12.5%;
   margin-right: 12.5%;
   font-family: Arial, Helvetica, sans-serif;
@@ -79,33 +85,43 @@ h2 {
   background-color: #666666;
   border-top: 3px solid #4aaaa5;
 }
-img {
- float: left;
+
+.clearfix {
+  overflow: auto;
+}
+img{
+  float: left;
+  box-sizing: border-box;
+  border: #ffffff solid 15px;
+  border-left: 0px;
+
+}
+p {
+  align-self: auto;
+  line-height: 25px;
 }
 
 input[type=text], select, textarea {
- width: 890px;
- border: 1px solid black;
+ width: 880px;
+ border: 1px solid #666666;
+ border-radius: 4px;
+ height: 25px;
+ margin: 10px 0px 10px 0px;
 }
 
 input[type=submit] {
- color: black;
+ color: #666666;
  background-color: #4aaaa5;
  border: none;
- border-radius: 4px;
  cursor: pointer;
- float: right;
+ float: left;
+ height: 30px
 }
+
 
 input[type=submit]:hover {
  background-color: #45a049;
 }
 
 
-/* Clear floats after the columns */
-.row:after {
- content: "";
- display: table;
- clear: both;
-}
 

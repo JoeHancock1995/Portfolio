@@ -2,7 +2,7 @@ body {
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   margin: 0px;
   padding: 0px;
-  background-image: url("file:///Users/Joe/Pictures/pink%20dust.png");
+  background-image: url("file:///Users/Joe/Downloads/small_steps/small_steps.png");
 
 
 }
@@ -11,6 +11,7 @@ body {
  text-align: justify;
  height: 74px;
  width: 90%;
+
  top: 0%;
  padding: 0em 5%;
  background:white;
@@ -69,7 +70,7 @@ h2 {
   width: 900px;
   padding: 30px;
   border: 1px solid #dddddd;
-  margin-top: 110px;
+  margin-top: 30px;
   margin-left: 12.5%;
   margin-right: 12.5%;
   font-family: Arial, Helvetica, sans-serif;
@@ -77,7 +78,7 @@ h2 {
 
 .footer {
   position: fixed;
-  height: 72px;
+  height: 50px;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -117,49 +118,35 @@ input[type=submit] {
  height: 30px
 }
 
-
 input[type=submit]:hover {
  background-color: #45a049;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-
 .row {
-  margin: 8px -16px;
+  margin: 10px;
 }
 
-/* Add padding BETWEEN each column */
 .row,
 .row > .column {
-  padding: 8px;
+  padding: 14px;
 }
 
-/* Create four equal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
+  width: 45%;
+  padding: 10px;
 }
-
-/* Clear floats after rows */ 
+ 
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Content */
 .content {
   background-color: white;
-  padding: 10px;
-}
-
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+  width: 405px;
+  height: 335px;
+  margin-left: auto;
+  margin-right: auto; 
 }

@@ -122,31 +122,28 @@ input[type=submit]:hover {
  background-color: #45a049;
 }
 
-.row {
-  margin: 10px;
+
+
+
+
+* {
+  box-sizing: border-box;
 }
 
-.row,
-.row > .column {
-  padding: 14px;
-}
-
-.column {
-  float: left;
-  width: 45%;
-  padding: 10px;
-}
- 
-.row:after {
+.clearfix::after {
   content: "";
-  display: table;
   clear: both;
+  display: table;
 }
+#box {
+width: 60%;
 
-.content {
-  background-color: white;
-  width: 405px;
-  height: 335px;
-  margin-left: auto;
-  margin-right: auto; 
+}
+.img-container {
+  border: 5px outset;
+  float: left;
+}
+.img-container:hover {
+  border: 5px inset;
+  
 }

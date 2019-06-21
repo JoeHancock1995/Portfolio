@@ -11,9 +11,9 @@ body {
  height: 120px;
  width: 100%;
  padding: 0em 5%;
- background:black;
- color:white;
- border-bottom: 5px double white;
+ background:white;
+ color:black;
+ border-bottom: 5px double black;
 }
 
 #name {
@@ -39,20 +39,18 @@ header > div h1 {
 
 header nav a {
   font-family: 'Kumar One', cursive;
-  margin-right: 150px;
    padding: 0 0.8em;
    white-space: nowrap;
-   text-decoration: #ffffff;
+   text-decoration: black;
 }
-header nav a:not(.active) {
-  color: #white;
-}
+
 .active {
-  color: white;
+  color: black;
   padding: 5px;
   margin-right: 10px;
 }
 h2 {
+  font-family: 'Kumar One', cursive;
   text-decoration: underline;
   color: #000000;
   text-align: center;
@@ -70,18 +68,10 @@ h2 {
   background-color: #ffffff;
   width: 850px;
   padding: 20px;
+  margin-left: 200px;
   font-family: 'Kumar One', cursive;
  }
 
-.footer {
-  position: fixed;
-  height: 50px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #000000;
-  border-top: 5px double;
-}
 
 .clearfix {
   overflow: auto;
@@ -96,6 +86,7 @@ img{
 p {
   align-self: auto;
   line-height: 25px;
+  font-family: 'Kumar One', cursive;
 }
 
 input[type=text], select, textarea {
@@ -119,14 +110,11 @@ input[type=submit]:hover {
  background-color: #45a049;
 }
 
-
-
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
-
 
 .wordGame {
   border: 5px outset;

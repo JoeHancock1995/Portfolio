@@ -1,36 +1,25 @@
+* {
+  box-sizing: border-box;
+}
 body { 
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   margin: 0px;
   padding: 0px;
-  background-image: url("small_steps.png");
-
 
 }
 .header {
- font-family: Georgia, 'Times New Roman', Times, serif;
  text-align: justify;
- height: 74px;
- width: 90%;
-
- top: 0%;
+ height: 120px;
+ width: 100%;
  padding: 0em 5%;
- background:white;
- color:black;
- border-bottom: 1px solid #dddddd;
+ background:black;
+ color:white;
+ border-bottom: 5px double white;
 }
 
 #name {
- display: inline;
- width: 160px;
- height: 74px;
- padding-top: 30px;
- padding-bottom: 32.5px;
- padding-left:  10px;
- padding-right: 10px;
- margin-left: 100px;
- box-sizing: border-box;
- background-color: #4aaaa5;
- color: #ffffff;
+  font-family: 'Kumar One Outline', cursive;
+margin-left: 100px;
+font-size: 30px;
 }
 
 header::after {
@@ -49,31 +38,39 @@ header > div h1 {
 }
 
 header nav a {
-   padding: 0 0.6em;
+  font-family: 'Kumar One', cursive;
+  margin-right: 150px;
+   padding: 0 0.8em;
    white-space: nowrap;
-   text-decoration: #666666;
+   text-decoration: #ffffff;
 }
 header nav a:not(.active) {
-  color: #666666;
+  color: #white;
 }
 .active {
-  color: #666666;
+  color: white;
+  padding: 5px;
+  margin-right: 10px;
 }
 h2 {
-  color: #4aaaa5;
+  text-decoration: underline;
+  color: #000000;
+  text-align: center;
+  font-size: 36px;
  }
 
+ #box {
+   text-align: center;
+   font-size: 26px;
+   
+
+ }
  .container {
-  position: absolute;
   box-sizing: content-box;
   background-color: #ffffff;
-  width: 900px;
-  padding: 30px;
-  border: 1px solid #dddddd;
-  margin-top: 30px;
-  margin-left: 12.5%;
-  margin-right: 12.5%;
-  font-family: Arial, Helvetica, sans-serif;
+  width: 850px;
+  padding: 20px;
+  font-family: 'Kumar One', cursive;
  }
 
 .footer {
@@ -82,8 +79,8 @@ h2 {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #666666;
-  border-top: 3px solid #4aaaa5;
+  background-color: #000000;
+  border-top: 5px double;
 }
 
 .clearfix {
@@ -124,26 +121,26 @@ input[type=submit]:hover {
 
 
 
-
-
-* {
-  box-sizing: border-box;
-}
-
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
-#box {
-width: 60%;
 
-}
-.img-container {
+
+.wordGame {
   border: 5px outset;
   float: left;
+  margin-left: 300px;
 }
-.img-container:hover {
+.wordGame:hover {
   border: 5px inset;
-  
+}
+.cardGame {
+  border: 5px outset;
+  float: left;
+  margin-left: 300px;
+}
+.cardGame:hover {
+  border: 5px inset;
 }

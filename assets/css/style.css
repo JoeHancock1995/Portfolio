@@ -4,8 +4,8 @@
 body { 
   margin: 0px;
   padding: 0px;
-
 }
+
 .header {
  text-align: justify;
  height: 120px;
@@ -13,42 +13,42 @@ body {
  padding: 0em 5%;
  background:white;
  color:black;
- border-bottom: 5px double black;
 }
-
-#name {
-  font-family: 'Kumar One Outline', cursive;
-margin-left: 100px;
-font-size: 30px;
-}
-
 header::after {
    content: '';
    display: inline-block;
    width: 100%;
 }
 
-header > div,
-header > div::before,
+/*this styles the structure of the navbar*/
+header div,
+header div::before,
 header nav,
-header > div h1 {
+header div h1 {
    display: inline-block;
    vertical-align: middle;
    text-align: left;
 }
-
 header nav a {
   font-family: 'Kumar One', cursive;
    padding: 0 0.8em;
    white-space: nowrap;
    text-decoration: black;
 }
-
 .active {
   color: black;
   padding: 5px;
   margin-right: 10px;
 }
+#name {
+  font-family: 'Kumar One Outline', cursive;
+margin-left: 100px;
+font-size: 30px;
+}
+
+
+/*styles body of pages*/
+
 h2 {
   font-family: 'Kumar One', cursive;
   text-decoration: underline;
@@ -56,12 +56,13 @@ h2 {
   text-align: center;
   font-size: 36px;
  }
-
+.img{ 
+  border: 5px double black;
+}
  #box {
    text-align: center;
    font-size: 26px;
    
-
  }
  .container {
   box-sizing: content-box;
@@ -70,8 +71,8 @@ h2 {
   padding: 20px;
   margin-left: 200px;
   font-family: 'Kumar One', cursive;
+  float: none;
  }
-
 
 .clearfix {
   overflow: auto;

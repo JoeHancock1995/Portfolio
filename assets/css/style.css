@@ -4,6 +4,7 @@
 body { 
   margin: 0px;
   padding: 0px;
+background-color: #02020a;
 }
 
 .header {
@@ -11,8 +12,8 @@ body {
  height: 120px;
  width: 100%;
  padding: 0em 5%;
- background:white;
- color:black;
+ background:#02020a;
+ color:white;
 }
 header::after {
    content: '';
@@ -33,10 +34,10 @@ header nav a {
   font-family: 'Kumar One', cursive;
    padding: 0 0.8em;
    white-space: nowrap;
-   text-decoration: black;
+   text-decoration: white;
 }
 .active {
-  color: black;
+  color: white;
   padding: 5px;
   margin-right: 10px;
 }
@@ -47,9 +48,13 @@ header nav a {
 h2 {
   font-family: 'Kumar One', cursive;
   text-decoration: underline;
-  color: #000000;
+  color: white;
   text-align: center;
   font-size: 36px;
+ }
+ .port {
+   background-color: #02020a;
+   text-align: center;
  }
 .img{ 
   height: 100%;
@@ -61,8 +66,8 @@ h2 {
    
  }
  .container {
-  box-sizing: content-box;
-  background-color: #ffffff;
+  text-align: center;
+  background-color: #02020a;
   padding: 20px;
   margin-left: 200px;
   font-family: 'Kumar One', cursive;
@@ -127,4 +132,69 @@ input[type=submit]:hover {
 }
 .cardGame:hover {
   border: 5px inset;
+}
+
+@media only screen and (max-width:980px) {
+  nav {
+    margin-right: 5px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .main-section,
+  .sidebar {
+    max-width: 100%;
+  }
+  main {
+    overflow: auto;
+  }
+  .work {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .work:nth-child(even) {
+    margin-right: 0;
+  }
+  .work:nth-child(odd) {
+    float: right;
+  }
+  .auth-image {
+    width: 100%;
+  }
+  .sidebar {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  #masthead {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  img{
+    height: auto;
+    width: 100%;
+  }
+  header .container {
+    padding: 0;
+  }
+
+.container {
+    padding-top: 0;
+  }
+
+
+  nav {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  nav a {
+    width: 30%;
+    padding-left: 0;
+    margin-left: 0;
+  }
 }

@@ -133,7 +133,15 @@ input[type=submit]:hover {
 .cardGame:hover {
   border: 5px inset;
 }
+.triviaGame {
+  border: 5px outset;
+  float: left;
+  margin-left: 300px;
+}
 
+.triviaGame:hover {
+  border: 5px inset;
+}
 @media only screen and (max-width:980px) {
   nav {
     margin-right: 5px;

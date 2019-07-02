@@ -42,7 +42,6 @@ header nav a {
   margin-right: 10px;
 }
 
-
 /*styles body of pages*/
 
 h2 {
@@ -69,10 +68,12 @@ h2 {
   text-align: center;
   background-color: #02020a;
   padding: 20px;
-  margin-left: 200px;
   font-family: 'Kumar One', cursive;
   float: none;
  }
+#info{
+  color: white;
+}
 
 .clearfix {
   overflow: auto;

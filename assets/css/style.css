@@ -152,6 +152,14 @@ input[type=submit]:hover {
 .Giphy:hover {
   border: 5px inset;
 }
+.FirebaseTrainSchedule {
+  border: 5px outset;
+  float: left;
+  margin-left: 300px;
+}
+.FirebaseTrainSchedule:hover {
+  border: 5px inset;
+}
 @media only screen and (max-width:980px) {
   nav {
     margin-right: 5px;

@@ -1,5 +1,5 @@
 body {
-  background-image: url('file:///Users/Joe/bootcamp_class/homework/Basic-Portfolio/Basic-Portfolio/assets/css/ezgif.com-crop.gif');
+  background-image: url(ezgif.com-crop.gif);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -14,7 +14,6 @@ body {
   font-size: 50px;
 }
 nav{
-  padding-left: 300px;
   font-size: 20px;
 }
 /*this styles the structure of the navbar*/
@@ -28,8 +27,6 @@ header div h1 {
 
 }
 header nav a {
-  font-family: ;
-   padding: 100px;
    white-space: nowrap;
    text-decoration: white;
 }
@@ -44,7 +41,6 @@ header nav a {
 /*styles body of pages*/
 
 h2 {
-  font-family: ;
   color: white;
   text-align: center;
   font-size: 86px;
@@ -64,16 +60,14 @@ h2 {
  }
  .container {
   text-align: center;
-  background-color: ;
   padding: 20px;
-  font-family: ;
   float: none;
   font-size: 80px;
  }
 #info{
-  color: white;
-font-size: 30px;
-}
+  color: red;
+font-size: 40px;
+text-shadow: 1px 1px 2px white, 0 0 1em blue, 0 0 0.2em blue;}
 
 .clearfix {
   overflow: auto;
@@ -90,26 +84,7 @@ p {
   font-family: ;
 }
 
-input[type=text], select, textarea {
- width: 880px;
- border: 1px solid #666666;
- border-radius: 4px;
- height: 25px;
- margin: 10px 0px 10px 0px;
-}
 
-input[type=submit] {
- color: #666666;
- background-color: #4aaaa5;
- border: none;
- cursor: pointer;
- float: left;
- height: 30px
-}
-
-input[type=submit]:hover {
- background-color: #45a049;
-}
 
 .clearfix::after {
   content: "";
@@ -215,7 +190,6 @@ input[type=submit]:hover {
     width: 100%;
     margin-top: 15px;
     text-align: center;
-    margin-left: 400px;
   }
 
   nav a {

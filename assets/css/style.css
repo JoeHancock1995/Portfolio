@@ -5,13 +5,17 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-color: black;
+  font-family: 'fs_cardboarderregular';
 }
 
 #name{
   color: azure;
+  white-space: nowrap;
+  font-size: 50px;
 }
 nav{
-  padding-left: 800px;
+  padding-left: 300px;
+  font-size: 20px;
 }
 /*this styles the structure of the navbar*/
 header div,
@@ -24,7 +28,7 @@ header div h1 {
 
 }
 header nav a {
-  font-family: 'Kumar One', cursive;
+  font-family: ;
    padding: 100px;
    white-space: nowrap;
    text-decoration: white;
@@ -33,19 +37,19 @@ header nav a {
   color: white;
   padding: 5px;
   margin-right: 10px;
+  white-space: nowrap;
+   text-decoration: white;
 }
 
 /*styles body of pages*/
 
 h2 {
-  font-family: 'Kumar One', cursive;
-  text-decoration: underline;
+  font-family: ;
   color: white;
   text-align: center;
-  font-size: 36px;
+  font-size: 86px;
  }
  .port {
-   background-color: ;
    text-align: center;
  }
 .img{ 
@@ -55,20 +59,20 @@ h2 {
 }
  #box {
    text-align: center;
-   font-size: 26px;
+   font-size: 66px;
    
  }
  .container {
   text-align: center;
   background-color: ;
   padding: 20px;
-  font-family: 'Kumar One', cursive;
+  font-family: ;
   float: none;
-  font-size: 30px;
+  font-size: 80px;
  }
 #info{
   color: white;
-
+font-size: 30px;
 }
 
 .clearfix {
@@ -83,7 +87,7 @@ img{
 p {
   align-self: auto;
   line-height: 25px;
-  font-family: 'Kumar One', cursive;
+  font-family: ;
 }
 
 input[type=text], select, textarea {

@@ -3,33 +3,9 @@
 
 
 @font-face {
-    font-family: 'abyssiaregular';
-    src: url('abyssia-webfont.woff2') format('woff2'),
-         url('abyssia-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'd3_craftismregular';
-    src: url('d3craftism-webfont.woff2') format('woff2'),
-         url('d3craftism-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'diskotequeregular';
-    src: url('diskoteque-webfont.woff2') format('woff2'),
-         url('diskoteque-webfont.woff') format('woff');
+    font-family: 'apricotregular';
+    src: url('apricot-webfont.woff2') format('woff2'),
+         url('apricot-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -51,9 +27,9 @@
 
 
 @font-face {
-    font-family: 'lotsofdotzregular';
-    src: url('lotsofdotz-webfont.woff2') format('woff2'),
-         url('lotsofdotz-webfont.woff') format('woff');
+    font-family: 'maassslicer3dregular';
+    src: url('maass_slicer_italic_3d-webfont.woff2') format('woff2'),
+         url('maass_slicer_italic_3d-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -63,9 +39,9 @@
 
 
 @font-face {
-    font-family: 'rohanregular';
-    src: url('rohan-webfont.woff2') format('woff2'),
-         url('rohan-webfont.woff') format('woff');
+    font-family: 'mariuszregular';
+    src: url('mariusz-webfont.woff2') format('woff2'),
+         url('mariusz-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -75,18 +51,9 @@
 
 
 @font-face {
-    font-family: 'squintregular';
-    src: url('squint-webfont.woff2') format('woff2'),
-         url('squint-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'fatmanlightbold';
-    src: url('fatman_light-webfont.woff2') format('woff2'),
-         url('fatman_light-webfont.woff') format('woff');
+    font-family: 'pandimencionalbold';
+    src: url('pandimensional-webfont.woff2') format('woff2'),
+         url('pandimensional-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -96,9 +63,45 @@
 
 
 @font-face {
-    font-family: 'hang_the_djregular';
-    src: url('hang_the_dj-webfont.woff2') format('woff2'),
-         url('hang_the_dj-webfont.woff') format('woff');
+    font-family: 'kreditregular';
+    src: url('kredit-webfont.woff2') format('woff2'),
+         url('kredit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'vitreousheavy';
+    src: url('vitreous-heavy-webfont.woff2') format('woff2'),
+         url('vitreous-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'refereeregular';
+    src: url('referee-webfont.woff2') format('woff2'),
+         url('referee-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'th_-_song_mitiregular';
+    src: url('th-song-miti-webfont.woff2') format('woff2'),
+         url('th-song-miti-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 

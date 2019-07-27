@@ -69,7 +69,9 @@ h2 {
 font-size: 40px;
 text-shadow: 1px 1px 2px rgb(115, 255, 0), 0 0 1em rgb(0,0,0), 0 0 0.2em rgb(143, 255, 50);
 }
-
+#profiles{
+  text-shadow: 1px 1px 2px rgb(209, 3, 250), 0 0 1em rgb(0,0,0), 0 0 0.2em rgb(255, 50, 238);
+}
 .clearfix {
   overflow: auto;
 }

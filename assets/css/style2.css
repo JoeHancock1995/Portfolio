@@ -1,0 +1,96 @@
+body {
+    background-image: url(gif3.gif);
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+    font-family: 'TheKingOfFighters';
+  }
+  
+  #name{
+    color: azure;
+    white-space: nowrap;
+    font-size: 50px;
+  }
+  nav{
+    font-size: 20px;
+  }
+  /*this styles the structure of the navbar*/
+  header div,
+  header div::before,
+  header nav,
+  header div h1 {
+     display: inline-block;
+     vertical-align: middle;
+     text-align: 
+  }
+  header nav a {
+     white-space: nowrap;
+     text-decoration: white;
+  }
+  .active {
+    color: white;
+    padding: 5px;
+    margin-right: 10px;
+    white-space: nowrap;
+     text-decoration: white;
+  }
+  
+  /*styles body of pages*/
+  
+  h2 {
+    color: white;
+    text-align: center;
+    font-size: 86px;
+   }
+   .port {
+     text-align: center;
+   }
+  .img{ 
+    height: 100%;
+    width: 100%;
+  }
+   #box {
+     text-align: center;
+     font-size: 66px;
+     margin-top: 100px;
+     margin-right: 10%;
+     margin-left: 10%;
+   }
+   .container {
+    text-align: center;
+    padding: 20px;
+    float: none;
+    font-size: 80px;
+   }
+  #info{
+    color: rgb(115, 255, 0);
+  font-size: 40px;
+  text-shadow: 1px 1px 2px rgb(115, 255, 0), 0 0 1em rgb(0,0,0), 0 0 0.2em rgb(143, 255, 50);
+  }
+  #profiles{
+    text-shadow: 1px 1px 2px rgb(209, 3, 250), 0 0 1em rgb(0,0,0), 0 0 0.2em rgb(255, 50, 238);
+  }
+  .clearfix {
+    overflow: auto;
+  }
+  img{
+    float: left;
+    box-sizing: border-box;
+    border-left: 0px;
+  
+  }
+  p {
+    align-self: auto;
+    line-height: 25px;
+    font-family: ;
+  }
+  
+  
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

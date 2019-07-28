@@ -133,6 +133,15 @@ p {
 .Giphy:hover {
   border: 5px inset;
 }
+.nbadashboard {
+  border: 5px outset;
+  float: left;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.nbadashboard:hover {
+  border: 5px inset;
+}
 
 @media only screen and (max-width:980px) {
   nav {

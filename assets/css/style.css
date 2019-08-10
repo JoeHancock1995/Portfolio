@@ -142,7 +142,24 @@ p {
 .nbadashboard:hover {
   border: 5px inset;
 }
-
+.liriAPP {
+  border: 5px outset;
+  float: left;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.liriAPP:hover {
+  border: 5px inset;
+}
+.cwgAPP {
+  border: 5px outset;
+  float: left;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.cwgAPP:hover {
+  border: 5px inset;
+}
 @media only screen and (max-width:980px) {
   nav {
     margin-right: 5px;

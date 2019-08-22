@@ -1,9 +1,9 @@
 body {
-  background-image: url(ezgif.com-crop.gif);
+  background-image: url(glitch.gif);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 80%;
   background-color: black;
   font-family: 'TheKingOfFighters';
 }
@@ -23,7 +23,6 @@ header nav,
 header div h1 {
    display: inline-block;
    vertical-align: middle;
-   text-align: 
 }
 header nav a {
    white-space: nowrap;
@@ -84,7 +83,7 @@ img{
 p {
   align-self: auto;
   line-height: 25px;
-  font-family: ;
+
 }
 
 

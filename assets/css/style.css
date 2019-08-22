@@ -1,5 +1,23 @@
-body {
-  background-image: url(glitch.gif);
+.index {
+  background-image: url(ed_comressed2.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 80%;
+  background-color: black;
+  font-family: 'TheKingOfFighters';
+}
+.portfolio {
+  background-image: url(ed5.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-color: black;
+  font-family: 'TheKingOfFighters';
+}
+.contact {
+  background-image: url(ed4.gif);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -58,18 +76,45 @@ h2 {
    margin-left: 10%;
  }
  .container {
-  text-align: left;
+  text-align: center;
   padding: 20px;
   float: none;
   font-size: 80px;
  }
 #info{
+  text-align: center;
   color: rgb(115, 255, 0);
 font-size: 40px;
 text-shadow: 1px 1px 2px rgb(115, 255, 0), 0 0 1em rgb(0,0,0), 0 0 0.2em rgb(143, 255, 50);
 }
 #profiles{
-  text-shadow: 1px 1px 2px rgb(209, 3, 250), 0 0 1em rgb(0,0,0), 0 0 0.2em rgb(255, 50, 238);
+  text-shadow: 1px 1px 2px rgb(61,255,249), 0 0 1em rgb(61,255,249), 0 0 0.2em rgb(0, 49, 141);
+  font-size: 20px;
+  text-align: center;
+}
+#linkedin{
+  border: 5px white outset;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+#linkedin:hover {
+  border: 5px inset;
+}
+#github{
+  border: 5px white outset;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+#github:hover {
+  border: 5px inset;
+}
+#resume{
+  border: 5px white outset;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+#resume:hover {
+  border: 5px inset;
 }
 .clearfix {
   overflow: auto;
@@ -83,7 +128,7 @@ img{
 p {
   align-self: auto;
   line-height: 25px;
-  font-size: 30px;
+  font-size: 20px;
 
 }
 

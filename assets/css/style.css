@@ -40,7 +40,7 @@ header nav a {
 
 h2 {
   color: white;
-  text-align: center;
+  text-align: left;
   font-size: 86px;
  }
  .port {
@@ -58,7 +58,7 @@ h2 {
    margin-left: 10%;
  }
  .container {
-  text-align: center;
+  text-align: left;
   padding: 20px;
   float: none;
   font-size: 80px;
@@ -83,6 +83,7 @@ img{
 p {
   align-self: auto;
   line-height: 25px;
+  font-size: 30px;
 
 }
 

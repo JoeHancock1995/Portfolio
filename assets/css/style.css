@@ -5,7 +5,7 @@
   background-attachment: fixed;
   background-size: 80%;
   background-color: black;
-  font-family: 'TheKingOfFighters';
+  font-family: 'Crash';
 }
 .portfolio {
   background-image: url(ed5.gif);
@@ -14,7 +14,7 @@
   background-attachment: fixed;
   background-size: 100%;
   background-color: black;
-  font-family: 'TheKingOfFighters';
+  font-family: 'Crash';
 }
 .contact {
   background-image: url(ed4.gif);
@@ -23,7 +23,7 @@
   background-attachment: fixed;
   background-size: 80%;
   background-color: black;
-  font-family: 'TheKingOfFighters';
+  font-family: 'Crash';
 }
 
 #name{
@@ -146,6 +146,7 @@ p {
   margin-right: 10%;
   margin-left: 10%;
 }
+
 .wordGame:hover {
   border: 5px inset;
 }
@@ -203,6 +204,15 @@ p {
   margin-left: 10%;
 }
 .cwgAPP:hover {
+  border: 5px inset;
+}
+.Reporganizer{
+  border: 5px outset;
+  float: left;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.Reporganizer:hover {
   border: 5px inset;
 }
 @media only screen and (max-width:980px) {
@@ -287,8 +297,8 @@ body {
   left: 70%;
   transform: translateX(-50%) translateY(-50%);
   color: white;
-  font-size: 60px;
-  font-family: 'threefourtwotworegular';
+font-size: 48px;
+  font-family: 'blocky_letters_invertedRg';
   letter-spacing: 7px;
 
 }

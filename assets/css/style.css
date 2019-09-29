@@ -1,5 +1,5 @@
 .index {
-  background-image: url(ed_comressed2.gif);
+  /* background-image: url(ed_comressed2.gif); */
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -276,4 +276,19 @@ h3 {
 }
 section{
   line-height: 55px;
+}
+body {
+  background: black;
+}
+
+.clock {
+  position: absolute;
+  top: 25%;
+  left: 70%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-size: 60px;
+  font-family: 'threefourtwotworegular';
+  letter-spacing: 7px;
+
 }

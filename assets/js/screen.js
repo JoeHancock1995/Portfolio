@@ -10,7 +10,7 @@
               $('nav').removeClass('red');
             }
 
-          });
+          })
 
      });
 

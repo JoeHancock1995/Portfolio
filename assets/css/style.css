@@ -7,6 +7,14 @@
   background-color: black;
   font-family: 'Crash';
 }
+
+.mdc-content {
+  padding: 16px;
+}
+.mdc-card {
+  height: 350px;
+  width: 350px;
+}
 .portfolio {
   background-position: center center;
   background-repeat: no-repeat;

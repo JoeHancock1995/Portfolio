@@ -3,9 +3,12 @@
 
 <head>
     <link rel="stylesheet" href="assets/css/style.css">
-   <link rel="stylesheet" href= "assets/css/fonts/stylesheet.css">
+    <link rel="stylesheet" href= "assets/css/fonts/stylesheet.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta charset="UTF-8">
-    <title>Index</title>
+    <title>Joe Hancock</title>
 </head>
 
 <body class="index">
@@ -14,7 +17,7 @@
     <header>
         <div>
             <section id="name">
-                <a class="active" href="index.html">JOE HANCOCK</a> 
+                <a class="active" href="http://www.plumesounding.com">JOE HANCOCK</a> 
                 
             </section>
         </div>
@@ -33,67 +36,76 @@
     </header> 
 
 </div>
+
 <div id="myScene"></div>
 <section>
-<div id=container>
-    <div id="info">
-        <div id="profiles">
-            <section id="resume">
-                <a class="active" href="assets/image/resume.pdf">RESUME</a>
-            </section>
-        </div>
-    </div>
-</div>
-
-<div class="port">
-        <div id="box">
-            <div class="wordGame">
-                <a href="https://joehancock1995.github.io/Word-guess-game/">
-                  <img src="assets/image/wordthumbnail.png" alt="wordgame" style="width:100%">
-                </a>
+    <div id="myScene"></div>
+</section>
+<h2>Projects</h2>
+<div class="mdc-layout-grid">
+  <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell">
+          <div class="Reporganizer">
+              <a href="https://reporganizer.herokuapp.com">
+                <img src="assets/image/repothumbnail.png" alt="cwg" style="width:100%">
+              </a>
           </div>
-            <div class="cardGame">
-                <a href="https://joehancock1995.github.io/unit-4-game/">
-                  <img src="assets/image/cardthumbnail.png" alt="cardgame" style="width:100%">
+      </div>
+    <div class="mdc-layout-grid__cell">
+      <div class="wordGame">
+      <a href="https://joehancock1995.github.io/Word-guess-game/">
+        <img src="assets/image/wordthumbnail.png" alt="wordgame" style="width:100%">
+      </a>
+      </div>
+    </div>
+    <div class="mdc-layout-grid__cell">
+      <div class="cardGame">
+      <a href="https://joehancock1995.github.io/unit-4-game/">
+        <img src="assets/image/cardthumbnail.png" alt="cardgame" style="width:100%">
+      </a>
+      </div>
+    </div>
+    <div class="mdc-layout-grid__cell">
+          <div class="nbadashboard">
+              <a href="https://joehancock1995.github.io/NBAdashboard-Version2-/">
+                <img src="assets/image/nbadash.png" alt="nbadash" style="width:100%">
+              </a>
+          </div>
+    </div>
+    <div class="mdc-layout-grid__cell">
+          <div class="Giphy">
+              <a href="https://joehancock1995.github.io/Giphy/">
+                <img src="assets/image/giphythumbnail.png" alt="giphy" style="width:100%">
+              </a>
+          </div>
+    </div>
+    <div class="mdc-layout-grid__cell">
+            <div class="liriAPP">
+                <a href="https://github.com/JoeHancock1995/liri-node-app">
+                  <img src="assets/image/lirithumbnail.png" alt="liri" style="width:100%">
+                </a>
+                </div>
+    </div>
+    <div class="mdc-layout-grid__cell">
+            <div class="cwgAPP">
+                <a href="https://github.com/JoeHancock1995/Constructor-Word-Guess">
+                  <img src="assets/image/cwgthumbnail.png" alt="cwg" style="width:100%">
                 </a>
             </div>
-        
+    </div>
+    <div class="mdc-layout-grid__cell">
             <div class="triviaGame">
                 <a href="https://joehancock1995.github.io/TriviaGame/">
                   <img src="assets/image/triviathumbnail.png" alt="trivia" style="width:100%">
                 </a>
             </div>
-        
-            <div class="Giphy">
-                <a href="https://joehancock1995.github.io/Giphy/">
-                  <img src="assets/image/giphythumbnail.png" alt="giphy" style="width:100%">
-                </a>
-            </div>
-            <div class="nbadashboard">
-                <a href="https://joehancock1995.github.io/NBAdashboard-Version2-/">
-                  <img src="assets/image/nbadash.png" alt="nbadash" style="width:100%">
-                </a>
-            </div>
-            <div class="liriAPP">
-              <a href="https://github.com/JoeHancock1995/liri-node-app">
-                <img src="assets/image/lirithumbnail.png" alt="liri" style="width:100%">
-              </a>
-          </div>
-          <div class="cwgAPP">
-            <a href="https://github.com/JoeHancock1995/Constructor-Word-Guess">
-              <img src="assets/image/cwgthumbnail.png" alt="cwg" style="width:100%">
-            </a>
-        </div>
-        <div class="Reporganizer">
-            <a href="https://reporganizer.herokuapp.com">
-              <img src="assets/image/repothumbnail.png" alt="cwg" style="width:100%">
-            </a>
-        </div>
-        </div>
-      </div>
-</section>
+    </div>
+  </div>
+</div>
+
 <script src= "./assets/js/three.js"></script>
  <script src="./assets/js/app.js"></script>
+ 
 </body>
 
 </html>

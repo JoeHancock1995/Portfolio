@@ -7,11 +7,18 @@
   background-color: black;
   font-family: 'Crash';
 }
-
+.cardContent{
+  font-family: "ticketing";
+}
+i {color: white;}
 .mdc-content {
   padding: 16px;
+  color: white;
+  
 }
+
 .mdc-card {
+  color: white;
   height: 350px;
   width: 350px;
 }
@@ -67,7 +74,9 @@ header nav a {
 }
 
 /*styles body of pages*/
-
+span{
+  color: aliceblue;
+}
 h2 {
   color: white;
   text-align: left;
@@ -145,82 +154,43 @@ p {
   clear: both;
   display: table;
 }
-
 .wordGame {
   border: 5px outset;
   float: left;
-  margin-right: 10%;
-  margin-left: 10%;
-}
-
-.wordGame:hover {
-  border: 5px inset;
 }
 .cardGame {
   border: 5px outset;
   float: left;
-  margin-right: 10%;
-  margin-left: 10%;
-}
-.cardGame:hover {
-  border: 5px inset;
+
 }
 .triviaGame {
   border: 5px outset;
   float: left;
-  margin-right: 10%;
-  margin-left: 10%;
-}
-
-.triviaGame:hover {
-  border: 5px inset;
 }
 
 .Giphy {
   border: 5px outset;
   float: left;
-  margin-right: 10%;
-  margin-left: 10%;
 }
-.Giphy:hover {
-  border: 5px inset;
-}
+
 .nbadashboard {
   border: 5px outset;
   float: left;
-  margin-right: 10%;
-  margin-left: 10%;
 }
-.nbadashboard:hover {
-  border: 5px inset;
-}
+
 .liriAPP {
   border: 5px outset;
   float: left;
-  margin-right: 10%;
-  margin-left: 10%;
-}
-.liriAPP:hover {
-  border: 5px inset;
 }
 .cwgAPP {
   border: 5px outset;
   float: left;
-  margin-right: 10%;
-  margin-left: 10%;
-}
-.cwgAPP:hover {
-  border: 5px inset;
 }
 .Reporganizer{
   border: 5px outset;
   float: left;
-  margin-right: 10%;
-  margin-left: 10%;
 }
-.Reporganizer:hover {
-  border: 5px inset;
-}
+
 
 @media only screen and (max-width:980px) {
   nav {
@@ -298,3 +268,8 @@ body {
   background: black;
 }
 
+
+/* Specifies the space between the edge of the grid and the edge of the first cell
+mdc-layout-grid-margin-<TYPE_OF_DEVICE>
+Specifies the space between edges of adjacent cells
+mdc-layout-grid-gutter-<TYPE_OF_DEVICE>	 */

@@ -27,6 +27,8 @@ function showTime(){
 }
 
 showTime(); 
+
+
       var scene = new THREE.Scene();
       var camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 0.1, 1000 );
       const light = new THREE.DirectionalLight( 0xffffff, 5.0 );

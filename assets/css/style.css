@@ -7,8 +7,15 @@
   background-color: black;
   font-family: 'Crash';
 }
+.mdc-layout-grid__cell{
+line-height: 20px;
+padding-top: 30px;
+padding-left: 10px;
+padding-right: 10px;
+}
 .cardContent{
   font-family: "ticketing";
+  color: grey;
 }
 i {color: white;}
 .mdc-content {
@@ -85,7 +92,7 @@ h2 {
  .port {
    text-align: center;
  }
-.img{ 
+img{ 
   height: 100%;
   width: 100%;
 }
@@ -102,19 +109,13 @@ h2 {
   float: none;
   font-size: 80px;
  }
-#info{
-  margin-left: 1%;
-  text-align: left;
-  color: rgb(115, 255, 0);
-font-size: 40px;
 
-}
 #profiles{
   margin-left: 1%;
   font-size: 20px;
   text-align: left;
 }
-#linkedin{
+/* #linkedin{
 
 }
 #linkedin:hover {
@@ -130,7 +131,7 @@ font-size: 40px;
 }
 #resume:hover {
 
-}
+} */
 .clearfix {
   overflow: auto;
 }
@@ -161,7 +162,9 @@ p {
 .cardGame {
   border: 5px outset;
   float: left;
-
+}
+.cardimg {
+  border: 1px rgb(255, 255, 255) solid;
 }
 .triviaGame {
   border: 5px outset;

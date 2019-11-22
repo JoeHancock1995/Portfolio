@@ -173,11 +173,18 @@ p {
   float: left;
 }
 
+.SendCodes {
+  border: 5px outset;
+  float: left;
+}
 .nbadashboard {
   border: 5px outset;
   float: left;
 }
-
+.GooglePF {
+  border: 5px outset;
+  float: left;
+}
 .liriAPP {
   border: 5px outset;
   float: left;

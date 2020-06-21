@@ -197,7 +197,10 @@ p {
   border: 5px outset;
   float: left;
 }
-
+.covidapp{
+  border: 5px outset;
+  float: left;
+}
 
 @media only screen and (max-width:980px) {
   nav {

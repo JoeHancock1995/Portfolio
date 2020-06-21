@@ -1,3 +1,4 @@
+$(document).ready(function () {
 function showTime(){
   var date = new Date();
   var h = date.getHours(); // 0 - 23
@@ -75,4 +76,4 @@ showTime();
 
     animate();
     
-  
+});

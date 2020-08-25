@@ -7,6 +7,7 @@
   background-color: black;
   font-family: 'Crash';
 }
+
 .mdc-layout-grid__cell{
 line-height: 20px;
 padding-top: 30px;
@@ -24,11 +25,15 @@ i {color: white;}
   
 }
 
+/* #video{
+  height: 449px;
+} */
 .mdc-card {
   color: white;
   height: 350px;
   width: 350px;
 }
+
 .portfolio {
   background-position: center center;
   background-repeat: no-repeat;
@@ -45,11 +50,19 @@ i {color: white;}
   background-color: black;
   font-family: 'Crash';
 }
-
+#container{
+  margin-top: 100px;
+}
 #name{
   color: azure;
   white-space: nowrap;
   font-size: 70px;
+}
+/* #info{
+  margin-top: 100px;
+} */
+#info .mdc-layout-grid{
+  margin-top: 900px;
 }
 .clock {
   position: absolute;

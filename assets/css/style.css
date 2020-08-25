@@ -249,11 +249,16 @@ p {
 }
 
 @media only screen and (max-width: 640px){
+  body{
+    width: 100%; height: 100%;
+  }
   #masthead {
     position: static;
     margin-bottom: 20px;
   }
-
+  .mdc-layout-grid{
+    margin-top: 800px;
+  }
   img{
     height: auto;
     width: 100%;
@@ -278,6 +283,12 @@ p {
     padding-left: 0;
     margin-left: 0;
   }
+  #info{
+  margin-top: 400px;
+  padding: 2%;
+  margin-left: 0%;
+}
+
 }
 
 h3 {
@@ -290,7 +301,6 @@ section{
 body {
   background: black;
 }
-
 
 /* Specifies the space between the edge of the grid and the edge of the first cell
 mdc-layout-grid-margin-<TYPE_OF_DEVICE>

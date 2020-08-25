@@ -50,19 +50,18 @@ i {color: white;}
   background-color: black;
   font-family: 'Crash';
 }
-#container{
-  margin-top: 100px;
-}
+
 #name{
   color: azure;
   white-space: nowrap;
   font-size: 70px;
 }
-/* #info{
-  margin-top: 100px;
-} */
+#info{
+  top: 0px;
+}
 #info .mdc-layout-grid{
-  margin-top: 900px;
+  margin-top: 700px;
+
 }
 .clock {
   position: absolute;
@@ -80,6 +79,7 @@ header nav,
 header div h1 {
    display: inline-block;
    vertical-align: middle;
+   margin:9px;
 }
 header nav a {
    white-space: nowrap;

@@ -50,10 +50,10 @@
   
 
         <video id="video" loop crossOrigin="anonymous" playsinline style="display:none">
-          <source src="textures/lsd5.ogv" type='video/ogg; codecs="theora, vorbis"'>
-          <source src="textures/lsd5.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source src="textures/dgglitch22.ogv" type='video/ogg; codecs="theora, vorbis"'>
+          <source src="textures/dgglitch22.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
         </video>
-<div id="container"></div>
+<!-- <div id="container"></div> -->
 <div id="info">
 
 
@@ -305,8 +305,8 @@
       var mouseX = 0;
       var mouseY = 0;
 
-      var windowHalfX = window.innerWidth / 2;
-      var windowHalfY = window.innerHeight / 2;
+      var windowHalfX = window.innerWidth /1;
+      var windowHalfY = window.innerHeight /1;
 
       var cube_count,
 
@@ -314,7 +314,7 @@
         materials = [],
 
         xgrid = 40,
-        ygrid = 15;
+        ygrid = 20;
 
       var startButton = document.getElementById('startButton');
       startButton.addEventListener('click', function () {
@@ -332,8 +332,8 @@
         container = document.createElement('div');
         document.body.appendChild(container);
 
-        camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 10000);
-        camera.position.z = 500;
+        camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 1, 10000);
+        camera.position.z = 300;
 
         scene = new THREE.Scene();
 
@@ -363,8 +363,8 @@
         ux = 1 / xgrid;
         uy = 1 / ygrid;
 
-        xsize = 480 / xgrid;
-        ysize = 204 / ygrid;
+        xsize = 200 / xgrid;
+        ysize = 125 / ygrid;
 
         var parameters = { color: 0xffffff, map: texture };
 
@@ -432,8 +432,8 @@
 
       function onWindowResize() {
 
-        windowHalfX = window.innerWidth / 2;
-        windowHalfY = window.innerHeight / 2;
+        windowHalfX = window.innerWidth / 1;
+        windowHalfY = window.innerHeight / 1;
 
         camera.aspect = window.innerWidth / window.innerHeight;
         camera.updateProjectionMatrix();
@@ -460,7 +460,7 @@
       function onDocumentMouseMove(event) {
 
         mouseX = (event.clientX - windowHalfX);
-        mouseY = (event.clientY - windowHalfY) * 0.3;
+        mouseY = (event.clientY - windowHalfY) * 0.03;
 
       }
 
@@ -480,8 +480,8 @@
 
         var time = Date.now() * 0.00005;
 
-        camera.position.x += (mouseX - camera.position.x) * 0.05;
-        camera.position.y += (- mouseY - camera.position.y) * 0.05;
+        camera.position.x += (mouseX - camera.position.x) * 0.0003;
+        camera.position.y += (- mouseY - camera.position.y) * 0.0;
 
         camera.lookAt(scene.position);
 
@@ -490,7 +490,7 @@
           material = materials[i];
 
           h = (360 * (material.hue + time) % 360) / 360;
-          material.color.setHSL(h, material.saturation, 5);
+          material.color.setHSL(h, material.saturation, 1);
 
         }
 
@@ -500,18 +500,18 @@
 
             mesh = meshes[i];
 
-            mesh.rotation.x += 0 * mesh.dx;
-            mesh.rotation.y += 10 * mesh.dy;
+            mesh.rotation.x += 50 * mesh.dx;
+            mesh.rotation.y += 50 * mesh.dy;
 
-            mesh.position.x -= 150 * mesh.dx;
-            mesh.position.y += 150 * mesh.dy;
-            mesh.position.z += 300 * mesh.dx;
+            mesh.position.x -= 50 * mesh.dx;
+            mesh.position.y += 50 * mesh.dy;
+            mesh.position.z += 125 * mesh.dx;
 
           }
 
         }
 
-        if (counter % 1000 === 0) {
+        if (counter % 2000 === 0) {
 
           for (var i = 0; i < cube_count; i++) {
 

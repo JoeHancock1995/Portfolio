@@ -289,7 +289,6 @@
     <script type="module">
 
       import * as THREE from '../build/three.module.js';
-
       import { EffectComposer } from './jsm/postprocessing/EffectComposer.js';
       import { RenderPass } from './jsm/postprocessing/RenderPass.js';
       import { ShaderPass } from './jsm/postprocessing/ShaderPass.js';
@@ -334,7 +333,7 @@
         container = document.createElement('div');
         document.body.appendChild(container);
 
-        camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, .1, 1000);
+        camera = new THREE.PerspectiveCamera(30, 400/150, 1, 1000);
         camera.position.z = 300;
 
         scene = new THREE.Scene();

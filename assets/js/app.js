@@ -138,13 +138,13 @@ function init() {
   renderer.setSize(window.innerWidth, window.innerHeight);
   container.appendChild(renderer.domElement);
 
-  window.addEventListener( 'resize', function () {
-    var width = window.innerWidth;
-    var height = window.innerHeight;
-    renderer.setSize( width, height );
-    camera.aspect = width / height;
-    camera.updateProjectionMatrix();
-  });
+  // window.addEventListener( 'resize', function () {
+  //   var width = window.innerWidth;
+  //   var height = window.innerHeight;
+  //   renderer.setSize( width, height );
+  //   camera.aspect = width / height;
+  //   camera.updateProjectionMatrix();
+  // })
 
   video = document.getElementById('video');
   video.play();

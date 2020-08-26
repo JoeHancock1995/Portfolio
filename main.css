@@ -1,4 +1,4 @@
-body {
+/* body {
 	margin: 0;
 	background-color: #000;
 	color: #fff;
@@ -6,7 +6,7 @@ body {
 	font-size: 13px;
 	line-height: 24px;
 	overscroll-behavior: none;
-}
+} */
 
 button {
 	cursor: pointer;
@@ -15,9 +15,9 @@ button {
 	background-color: #000000;
 }
 
-canvas {
+/* canvas {
 	display: inline-block;
-}
+} */
 
 #info {
 	position: absolute;
@@ -61,9 +61,9 @@ a, button, input, select {
 }
 
 	#overlay button {
-		background: #ffffff;
+		background: #000000;
 		border: 0;
-		color: #000000;
+		color: #ffffff;
 		padding: 16px 20px;
 		text-transform: uppercase;
 		cursor: pointer;

@@ -62,7 +62,8 @@ a, button, input, select {
 
 	#overlay button {
 		background: #000000;
-		border: 0;
+		border: 2 solid;
+		border-color: white;
 		color: #ffffff;
 		padding: 16px 20px;
 		text-transform: uppercase;

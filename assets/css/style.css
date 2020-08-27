@@ -105,7 +105,7 @@ i {color: white;}
 }
 #info{
   top: 0px;
-  margin-top: 10%;
+  margin-top: 20%;
 }
 #info .mdc-layout-grid{
   margin-top: 28%;
@@ -236,38 +236,116 @@ p {
   border: 5px outset;
   float: left;
 }
-
-@media only screen and (max-width:980px) {
-  nav {
-    margin-right: 5px;
+@media only screen and (max-width: 1024px){
+  #info{
+    margin-top: 90%;
   }
+}
+@media only screen and (max-width:980px) {
+  body{
+    width: 100%; height: 100%;
+  }
+  .index{
+    width: 100%;
+    margin: 0;
+  }
+  #info{
+    width: 100%;
+    margin-top: 800px;
+  }
+
+  #masthead {
+    position: static;
+    margin-bottom: 20px;
+  }
+  .mdc-layout-grid{
+    margin-top: 800px;
+  }
+  img{
+    height: auto;
+    width: 50%;
+  }
+  header .container {
+    padding: 0;
+  }
+
+
+  nav {
+    width: 50%;
+    margin-left: 22%;
+    padding-left: 22%;
+    /* margin-top: 5px; */
+    text-align: center;
+  }
+  #linkedin{
+    width: 20%;
+  }
+ 
+  #github{
+    width: 20%;
+  }
+  #email{
+    width: 20%;
+  }
+  #name{
+    font-size: 46px;
+    margin: 3.5%;
+  }
+
 }
 
 
 @media only screen and (max-width: 768px) {
-  .main-section,
-  .sidebar {
-    max-width: 100%;
+  body{
+    width: 100%; height: 100%;
   }
-  main {
-    overflow: auto;
-  }
-  .work {
-    width: 50%;
-    margin-bottom: 10px;
-  }
-  .work:nth-child(even) {
-    margin-right: 0;
-  }
-  .work:nth-child(odd) {
-    float: right;
-  }
-  .auth-image {
+  .index{
     width: 100%;
+    margin: 0;
   }
-  .sidebar {
-    margin-bottom: 40px;
+  #info{
+    width: 100%;
+    margin-top: 800px;
   }
+
+  #masthead {
+    position: static;
+    margin-bottom: 20px;
+  }
+  .mdc-layout-grid{
+    margin-top: 800px;
+  }
+  img{
+    height: auto;
+    width: 50%;
+  }
+  header .container {
+    padding: 0;
+  }
+
+
+  nav {
+    width: 50%;
+    margin-left: 22%;
+    padding-left: 22%;
+    /* margin-top: 5px; */
+    text-align: center;
+  }
+  #linkedin{
+    width: 20%;
+  }
+ 
+  #github{
+    width: 20%;
+  }
+  #email{
+    width: 20%;
+  }
+  #name{
+    font-size: 46px;
+    margin: 3.5%;
+  }
+
 }
 
 @media only screen and (max-width: 640px){
@@ -320,12 +398,6 @@ p {
     font-size: 46px;
     margin: 3.5%;
   }
-  /* nav a {
-    width: 0%;
-    padding-left: 0;
-    margin-left: 0;
-  } */
-
 
 }
 
@@ -333,9 +405,9 @@ h3 {
   text-decoration-line: underline;
   color: white;
 }
-section{
+/* section{
   line-height: 55px;
-}
+} */
 body {
   background: black;
 }

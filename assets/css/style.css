@@ -401,7 +401,22 @@ p {
 
 }
 
-h3 {
+@media only screen and (max-width: 640px){
+  #name{
+    font-size: 38px;
+    width: 100%;
+    
+  }
+  #info{
+    margin-top: 600px;
+  }
+  h2{
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+}
+/* h3 {
   text-decoration-line: underline;
   color: white;
 }
@@ -410,7 +425,7 @@ h3 {
 } */
 body {
   background: black;
-}
+} */
 
 /* Specifies the space between the edge of the grid and the edge of the first cell
 mdc-layout-grid-margin-<TYPE_OF_DEVICE>

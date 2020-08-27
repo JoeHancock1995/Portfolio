@@ -3,9 +3,75 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
+ width: 100%;
   background-color: black;
   font-family: 'Crash';
+}
+
+button {
+	cursor: pointer;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #000000;
+}
+
+#info {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	padding: 0px;
+	box-sizing: border-box;
+	text-align: center;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	z-index: 100; /* TODO Solve this in HTML */
+}
+
+a, button, input, select {
+	pointer-events: auto;
+	color: #ffffff;
+}
+
+.dg.ac {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	z-index: 2 !important; /* TODO Solve this in HTML */
+}
+
+#overlay {
+	position: absolute;
+	z-index: 2;
+	top: 50;
+	left: 0;
+	width: 95%;
+	height: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0,0,0,0.7);
+}
+
+	#overlay button {
+		background: #000000;
+		border: 2 solid;
+		border-color: white;
+		color: #ffffff;
+		padding: 16px 20px;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+#notSupported {
+	width: 50%;
+	margin: auto;
+	background-color: #f00;
+	margin-top: 20px;
+	padding: 10px;
 }
 
 .mdc-layout-grid__cell{
@@ -13,7 +79,7 @@ line-height: 20px;
 padding-top: 30px;
 padding-left: 10px;
 padding-right: 10px;
-width: 100%;
+width: 90%;
 }
 .cardContent{
   font-family: "ticketing";
@@ -26,44 +92,23 @@ i {color: white;}
   
 }
 
-/* #video{
-  height: 449px;
-} */
 .mdc-card {
   color: white;
   height: 350px;
   width: 350px;
 }
 
-.portfolio {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-  background-color: black;
-  font-family: 'Crash';
-}
-.contact {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 80%;
-  background-color: black;
-  font-family: 'Crash';
-}
-
 #name{
-  color: azure;
+  color: #ffffff;
   white-space: nowrap;
-  font-size: 70px;
+  font-size: 60px;
 }
 #info{
   top: 0px;
-  margin-top: 300px;
+  margin-top: 10%;
 }
 #info .mdc-layout-grid{
-  margin-top: 400px;
-
+  margin-top: 28%;
 }
 .clock {
   position: absolute;
@@ -81,7 +126,7 @@ header nav,
 header div h1 {
    display: inline-block;
    vertical-align: middle;
-   margin:9px;
+   margin:5px;
 }
 header nav a {
    white-space: nowrap;
@@ -89,20 +134,20 @@ header nav a {
 }
 .active {
   color: white;
-  padding: 5px;
-  margin-right: 10px;
+  /* padding: 2px; */
+  /* margin-right: 10px; */
   white-space: nowrap;
    text-decoration: white;
 }
 
 /*styles body of pages*/
 span{
-  color: aliceblue;
+  color: #ffffff;
 }
 h2 {
   color: white;
   text-align: left;
-  font-size: 86px;
+  font-size: 54px;
  }
  .port {
    text-align: center;
@@ -111,50 +156,30 @@ img{
   height: 100%;
   width: 100%;
 }
- #box {
+ /* #box {
    text-align: center;
    font-size: 66px;
    margin-top: 100px;
    margin-right: 10%;
    margin-left: 10%;
- }
- .container {
+ } */
+ /* .container {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   float: none;
   font-size: 80px;
- }
+ } */
 
 #profiles{
   margin-left: 1%;
   font-size: 20px;
   text-align: left;
 }
-/* #linkedin{
 
-}
-#linkedin:hover {
-  
-}
-#github{
-
-}
-#github:hover {
-}
-#resume{
-  margin-left: 1%;
-}
-#resume:hover {
-
-} */
-.clearfix {
-  overflow: auto;
-}
 img{
   float: left;
   box-sizing: border-box;
   border-left: 0px;
-
 }
 p {
   align-self: auto;
@@ -162,11 +187,6 @@ p {
   font-size: 20px;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 .wordGame {
   border: 5px outset;
   float: left;
@@ -256,7 +276,13 @@ p {
   }
   .index{
     width: 100%;
+    margin: 0;
   }
+  #info{
+    width: 100%;
+    margin-top: 800px;
+  }
+
   #masthead {
     position: static;
     margin-bottom: 20px;
@@ -266,33 +292,40 @@ p {
   }
   img{
     height: auto;
-    width: 100%;
+    width: 50%;
   }
   header .container {
     padding: 0;
   }
 
-.container {
-    padding-top: 0;
-  }
-
 
   nav {
-    width: 100%;
-    margin-top: 15px;
+    width: 50%;
+    margin-left: 22%;
+    padding-left: 22%;
+    /* margin-top: 5px; */
     text-align: center;
   }
-
-  nav a {
-    width: 30%;
+  #linkedin{
+    width: 20%;
+  }
+ 
+  #github{
+    width: 20%;
+  }
+  #email{
+    width: 20%;
+  }
+  #name{
+    font-size: 46px;
+    margin: 3.5%;
+  }
+  /* nav a {
+    width: 0%;
     padding-left: 0;
     margin-left: 0;
-  }
-  #info{
-  margin-top: 400px;
-  padding: 2%;
-  margin-left: 0%;
-}
+  } */
+
 
 }
 

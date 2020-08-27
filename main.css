@@ -1,4 +1,4 @@
-/* body {
+body {
 	margin: 0;
 	background-color: #000;
 	color: #fff;
@@ -6,7 +6,7 @@
 	font-size: 13px;
 	line-height: 24px;
 	overscroll-behavior: none;
-} */
+}
 
 button {
 	cursor: pointer;

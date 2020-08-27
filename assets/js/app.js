@@ -79,7 +79,6 @@
 // });
 
 import * as THREE from '../build/three.module.js';
-
 import { EffectComposer } from './jsm/postprocessing/EffectComposer.js';
 import { RenderPass } from './jsm/postprocessing/RenderPass.js';
 import { ShaderPass } from './jsm/postprocessing/ShaderPass.js';
@@ -124,7 +123,7 @@ function init() {
   container = document.createElement('div');
   document.body.appendChild(container);
 
-  camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 1, 10000);
+  camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 1000);
   camera.position.z = 300;
 
   scene = new THREE.Scene();
@@ -137,15 +136,13 @@ function init() {
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(window.innerWidth, window.innerHeight);
   container.appendChild(renderer.domElement);
-
-  // window.addEventListener( 'resize', function () {
+  //   window.addEventListener('resize', function () {
   //   var width = window.innerWidth;
   //   var height = window.innerHeight;
-  //   renderer.setSize( width, height );
+  //   renderer.setSize(width, height);
   //   camera.aspect = width / height;
   //   camera.updateProjectionMatrix();
   // })
-
   video = document.getElementById('video');
   video.play();
   video.addEventListener('play', function () {
@@ -164,7 +161,7 @@ function init() {
   uy = 1 / ygrid;
 
   xsize = 200 / xgrid;
-  ysize = 125 / ygrid;
+  ysize = 99 / ygrid;
 
   var parameters = { color: 0xffffff, map: texture };
 
@@ -192,7 +189,7 @@ function init() {
       mesh = new THREE.Mesh(geometry, material);
 
       mesh.position.x = (i - xgrid / 2) * xsize;
-      mesh.position.y = (j - ygrid / 2) * ysize;
+      mesh.position.y = (j - ygrid / 3) * ysize;
       mesh.position.z = 0;
 
       mesh.scale.x = mesh.scale.y = mesh.scale.z = 1;
@@ -281,7 +278,7 @@ function render() {
   var time = Date.now() * 0.00005;
 
   camera.position.x += (mouseX - camera.position.x) * 0.0003;
-  camera.position.y += (- mouseY - camera.position.y) * 0.0;
+  camera.position.y += (- mouseY - camera.position.y) * 0.0003;
 
   camera.lookAt(scene.position);
 
@@ -300,10 +297,10 @@ function render() {
 
       mesh = meshes[i];
 
-      mesh.rotation.x += 50 * mesh.dx;
-      mesh.rotation.y += 50 * mesh.dy;
+      mesh.rotation.x += 25 * mesh.dx;
+      mesh.rotation.y += 25 * mesh.dy;
 
-      mesh.position.x -= 50 * mesh.dx;
+      mesh.position.x -= 80 * mesh.dx;
       mesh.position.y += 50 * mesh.dy;
       mesh.position.z += 125 * mesh.dx;
 

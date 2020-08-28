@@ -291,8 +291,11 @@
       import { RenderPass } from './jsm/postprocessing/RenderPass.js';
       import { ShaderPass } from './jsm/postprocessing/ShaderPass.js';
       import { BloomPass } from './jsm/postprocessing/BloomPass.js';
-      import { GlitchPass } from './jsm/postprocessing/GlitchPass.js';
       import { CopyShader } from './jsm/shaders/CopyShader.js';
+      // import { GlitchPass } from './jsm/postprocessing/GlitchPass.js';
+      import { RGBShiftShader } from './jsm/shaders/RGBShiftShader.js';
+      import { DotScreenShader } from './jsm/shaders/DotScreenShader.js';
+
 
       var container;
 
@@ -383,7 +386,7 @@
             oy = j;
 
             geometry = new THREE.BoxBufferGeometry(xsize, ysize, xsize);
-
+            
             change_uvs(geometry, ux, uy, ox, oy);
 
             materials[cube_count] = new THREE.MeshLambertMaterial(parameters);
@@ -424,15 +427,16 @@
 
         var renderModel = new RenderPass(scene, camera);
         var effectBloom = new BloomPass(1);
-        var effectCopy = new ShaderPass(CopyShader);
-        var glitchPass = new GlitchPass();
-
+        var effectCopy = new ShaderPass(DotScreenShader);
+        effectCopy.uniforms [ 'scale' ].value = 6;
+        // var glitchPass = new GlitchPass();
         composer = new EffectComposer(renderer);
 
         composer.addPass(renderModel);
         composer.addPass(effectBloom);
         composer.addPass(effectCopy);
-        composer.addPass(glitchPass)
+        // composer.addPass(glitchPass);
+        // composer.addPass( afterimagePass);
 
         //
 

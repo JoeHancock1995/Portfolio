@@ -292,7 +292,7 @@
       import { ShaderPass } from './jsm/postprocessing/ShaderPass.js';
       import { BloomPass } from './jsm/postprocessing/BloomPass.js';
       import { CopyShader } from './jsm/shaders/CopyShader.js';
-      // import { GlitchPass } from './jsm/postprocessing/GlitchPass.js';
+      import { GlitchPass } from './jsm/postprocessing/GlitchPass.js';
       import { RGBShiftShader } from './jsm/shaders/RGBShiftShader.js';
       import { DotScreenShader } from './jsm/shaders/DotScreenShader.js';
 
@@ -427,15 +427,15 @@
 
         var renderModel = new RenderPass(scene, camera);
         var effectBloom = new BloomPass(1);
+        var glitchPass = new GlitchPass();
         var effectCopy = new ShaderPass(DotScreenShader);
-        effectCopy.uniforms [ 'scale' ].value = 6;
-        // var glitchPass = new GlitchPass();
+        effectCopy.uniforms [ 'scale' ].value = 5;
         composer = new EffectComposer(renderer);
 
         composer.addPass(renderModel);
         composer.addPass(effectBloom);
         composer.addPass(effectCopy);
-        // composer.addPass(glitchPass);
+        composer.addPass(glitchPass);
         // composer.addPass( afterimagePass);
 
         //
@@ -547,7 +547,7 @@
 
 
     </script>
-<script src= "./assets/js/three.js"></script>
+<!-- <script src= "./assets/js/three.js"></script> -->
  <!-- <script src="./assets/js/app.js"></script> -->
  
 </body>
